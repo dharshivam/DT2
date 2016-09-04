@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow xmlns="http://www.springframework.org/schema/webflow"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/webflow
+		http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd">
+
+	<var name="res" class="java.lang.String"/>
+	<view-state id="checkout" view="Cart_shipAdd">
+		<transition on="Proceed" to="doit" />
+	</view-state>
+	
+	<action-state id="doit">
+		<evaluate expression="cartController.success()" result="res"/>
+		<transition on="success" to="success"/>
+		<transition on="error" to="err"/>
+	</action-state>
+	
+	<end-state id="success" view="Cart_Success" />
+	<end-state id="err" view="Cart_Pay" />
+		
+</flow>

@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin:0;
+}
+.index{
+    background:url("../img/c..jpg") no-repeat;
+    background-size:cover;
+    height: 100vh;
+}
+.hi{
+    color:deeppink;
+    font-size:3em;
+    text-align: center;
+    padding: 5vh 0vh 5vh 0vh;
+    text-decoration: underline;
+}
+.text
+{
+    height:auto;
+    display:block;
+    margin:auto;
+}
+.ask{
+    padding-top: 2em;
+}
+	.img{
+   display: block;
+    margin: auto;
+
+}
+
+.reg{
+    background: url(../img/app.jpg)no-repeat;
+    background-size:cover;
+    height:100vh;
+}
+.h{
+    text-align: center;
+}
+.rock{
+    padding:0% 20%;
+}
+label{
+	backgroud-color:plum;
+}
+header{
+    text-align: center;
+    font-size: 3em;
+    font-style:bold;
+}
+.for{
+    
+    padding:0% 20%;
+    padding-top: 5vh;
+}
+.mg{
+    height:auto;
+    display:block;
+    margin:auto;
+}
+}
